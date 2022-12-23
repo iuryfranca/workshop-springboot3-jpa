@@ -1,12 +1,16 @@
 package com.course.coursesprintboot3.entities;
 
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
-
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -52,7 +56,7 @@ public class User implements Serializable {
     }
 
     public void setPhone(String phone) {
-        phone = phone;
+        this.phone = phone;
     }
 
     public String getPassword() {
@@ -60,7 +64,7 @@ public class User implements Serializable {
     }
 
     public void setPassword(String password) {
-        password = password;
+        this.password = password;
     }
 
     @Override

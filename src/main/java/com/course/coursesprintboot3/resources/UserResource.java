@@ -1,7 +1,6 @@
 package com.course.coursesprintboot3.resources;
 
 import com.course.coursesprintboot3.entities.User;
-import com.course.coursesprintboot3.entities.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
